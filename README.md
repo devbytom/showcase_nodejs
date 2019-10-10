@@ -1,4 +1,4 @@
-# showcase projectdocker
+# showcase project
 
 ## Getting started
 - Run `docker-compose up --build`
