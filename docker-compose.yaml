@@ -1,0 +1,15 @@
+version: '3'
+services:
+  main:
+    env_file: .env
+    image: 'docker-registry-default.rapidfinancing-ca429e771925b3fc5f8305c5315d4bd7-0001.us-south.containers.appdomain.cloud/showcase/test:${APP_VERSION}'
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    networks:
+      - webnet
+networks:
+  webnet:
+    driver: bridge
