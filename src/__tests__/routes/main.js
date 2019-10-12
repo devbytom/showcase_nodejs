@@ -26,6 +26,9 @@ describe('base method', () => {
         body: {
           key: 'anything else',
         },
+        query: {
+          key: 'anything else',
+        },
       };
 
       mainRoute.base(req, res);
@@ -36,6 +39,9 @@ describe('base method', () => {
     it('should return validArgsResponse', () => {
       const req = {
         body: {
+          key: 'k3y',
+        },
+        query: {
           key: 'k3y',
         },
       };
