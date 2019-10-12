@@ -9,8 +9,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 app.post('/', mainRoute.base);
-app.get('/', (req, res, next) => {
-  res.json('invalid http method');
-});
+app.get('/', mainRoute.base);
 
+console.log(process.env.PORT);
 app.listen(process.env.PORT);
