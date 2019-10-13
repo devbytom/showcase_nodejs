@@ -4,7 +4,7 @@ export default {
     return valid
       ? res.json({
           status: true,
-          message: 'there is your response',
+          message: 'there is your response 2.0',
           prop: 'aaaaaaaa',
         })
       : res.json({
