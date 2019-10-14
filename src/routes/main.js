@@ -5,7 +5,7 @@ export default {
       ? res.json({
           status: true,
           message: 'there is your response',
-          // prop: 'aaaaaaaa',
+          p: 'q',
         })
       : res.json({
           status: false,
