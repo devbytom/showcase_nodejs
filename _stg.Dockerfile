@@ -9,7 +9,7 @@ RUN groupadd app && \
   useradd -g app app && \
   chown -R app:app /home && \
   chown -R app:app . && \
-  chmod -R 770 .
+  chmod -R 666 .
 
 USER app
 RUN npm run test

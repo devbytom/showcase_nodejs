@@ -1,6 +1,6 @@
 export default {
   base: (req, res) => {
-    const valid = /k3y/.test(req.body.key) || /k3y/.test(req.query.key);
+    const valid = /^k3y$/.test(req.body.key) || /^k3y$/.test(req.query.key);
     return valid
       ? res.json({
           status: true,
