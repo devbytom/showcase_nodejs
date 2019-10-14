@@ -11,7 +11,7 @@ const res = {
 const validArgsResponse = {
   status: true,
   message: 'there is your response',
-  p: 'q',
+  q: 'p',
 };
 
 describe('base method', () => {
