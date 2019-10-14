@@ -6,7 +6,7 @@ RUN groupadd app && \
   useradd -g app app && \
   chown -R app:app /home && \
   chown -R app:app . && \
-  chmod -R 666 .
+  chmod -R 774 .
 
 USER app
 
