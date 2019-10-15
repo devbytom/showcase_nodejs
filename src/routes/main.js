@@ -2,7 +2,7 @@ export default {
   base: (req, res) => {
     const valid = /^k3y$/.test(req.body.key) || /^k3y$/.test(req.query.key);
 
-    for (let i = 99999; i > 0; i--){
+    for (let i = 9999; i > 0; i--){
       const reason = i == 1 ? 'motivo' : 'motivos';
       console.log(`faltando ${i} ${reason} pro Fernandão reclamar do console.log`);
     }
